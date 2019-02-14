@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'git clone https://github.com/carlossg/jenkinsfile-runner-fn-example.git'
                 echo 'Hello world!'
-                sh 'mvn clean package'
+                sh 'mvn -Duser.home=/tmp clean package'
             }
         }
     }
